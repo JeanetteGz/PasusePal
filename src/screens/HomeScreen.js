@@ -22,7 +22,7 @@ import { REASONS, CATEGORIES, SAMPLE_DATA } from '../utils/constants';
 import { globalStyles, colors } from '../styles/globalStyles';
 
 export default function HomeScreen() {
-  const [purchases, setPurchases] = useState([]);
+  const [purchases, setPurchases] = useState(SAMPLE_DATA);
   const [monthlyBudget, setMonthlyBudget] = useState(200);
   const [showAddModal, setShowAddModal] = useState(false);
   const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
